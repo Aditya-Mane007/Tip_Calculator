@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Tip calculator app</title>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="./images/logo.svg" alt="logo" />
+		</div>
+		<div class="calcultor-card">
+			<div class="partone">
+				<label for="">Bill</label>
+				<input type="number" class="bill-input" />
+				<label for="">Select Tip %</label>
+				<div class="tip-btns">
+					<div class="tips btn btn-active">5%</div>
+					<div class="tips btn">10%</div>
+					<div class="tips btn">15%</div>
+					<div class="tips btn">25%</div>
+					<div class="tips btn">50%</div>
+					<div class="tips">
+						<input type="number" placeholder="Custom" class="custom" />
+					</div>
+				</div>
+
+				<div class="no-people">
+					<label for="">Number of People</label>
+					<input type="number" class="people-count" />
+				</div>
+			</div>
+
+			<div class="parttwo">
+				<div class="calculation">
+					<div class="tip-amount">
+						<div class="text">
+							<p>Tip Amount</p>
+							<p class="person">/ person</p>
+						</div>
+						<div
+							class="tip-value tip-value-person"
+							style="color: hsl(172, 67%, 45%); font-weight: 700"
+						>
+							$0.0
+						</div>
+					</div>
+					<div class="total-tip-amount">
+						<div class="text">
+							<p>Total</p>
+							<p class="person">/ person</p>
+						</div>
+						<div
+							class="tip-value tip-value-total"
+							style="color: hsl(172, 67%, 45%); font-weight: 700"
+							;
+						>
+							$32.79
+						</div>
+					</div>
+					<div class="reset-btn">RESET</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+		person Total / person Reset -->
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Aditya Mane</a>.
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
